@@ -1,0 +1,26 @@
+.logo {
+	height: 5vh;
+	width: 5vw;
+}
+
+.footer_nav{
+	text-decoration: none;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+.shop-links{
+	color: #212529;
+}
+
+.shop-links :hover{
+	color: darkgray;
+}
+
+.container_overlay{
+	position: absolute;
+	inset: 0px;
+}
