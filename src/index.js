@@ -101,11 +101,11 @@ registerBlockType('customblock/my-custom-block', {
     }
 
     function onOverlayColorChange(newColor) {
-        setAttributes( { overlayColor: newColor});
+        setAttributes( { overlayColor: newColor });
     }
 
     function onOverlayOpacityChange(newOpacity) {
-        setAttributes( { overlayOpacity: newOpacity});
+        setAttributes( { overlayOpacity: newOpacity });
     }
     
     // This is the return section or otherwise known as the area that your Gutenburg block will be read on the wordpress settings sidebar. you must define each new attribute under the inspectorControls tag so that they will appear in the settings section for your block
@@ -141,10 +141,7 @@ registerBlockType('customblock/my-custom-block', {
                         </Button>
                      ) }/>
             
-            <div style = {{
-                marginTop:'20px',
-                marginBottom: '40px'
-            }}>
+            <div style = {{ marginTop:'20px', marginBottom: '40px' }}>
                 <p><strong>Overlay Color:</strong></p>
                 <ColorPalette value = { overlayColor }
                               onChange = { onOverlayColorChange }/>
@@ -153,12 +150,11 @@ registerBlockType('customblock/my-custom-block', {
 
             <RangeControl 
                 label = { 'Overlay Opacity' }
-                value = { overlayOpacity}
+                value = { overlayOpacity }
                 onChange = { onOverlayOpacityChange }
                 min = { 0 }
                 max = { 1 }
-                step = { 0.05
-                 }
+                step = { 0.05 }
             />
 
             </PanelBody>
@@ -171,11 +167,8 @@ registerBlockType('customblock/my-custom-block', {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'  
         }}>
-            <div class = "container-overlay" style = {{
-                background:overlayColor,
-                opacity: overlayOpacity
-            }}> 
-            </div>
+
+            <div class = "container_overlay" style = {{ background:overlayColor, opacity: overlayOpacity }}></div>
 
             <RichText key = "editable"
                       tagName = "h2"
@@ -216,10 +209,8 @@ registerBlockType('customblock/my-custom-block', {
                 backgroundRepeat: 'no-repeat'  
             }}>
 
-            <div class = "container-overlay" style = {{
-                background:overlayColor,
-                opacity: overlayOpacity
-            }}></div>
+            <div class = "container_overlay" style = {{ background:overlayColor, opacity: overlayOpacity }}></div>
+
 
                 <h2 style = { {color: titleColor} }> {title} </h2>
                 <RichText.Content style = { {color: bodyColor} } tagName = "p"

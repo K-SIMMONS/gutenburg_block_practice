@@ -253,7 +253,7 @@ registerBlockType('customblock/my-custom-block', {
         backgroundRepeat: 'no-repeat'
       }
     }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      class: "container-overlay",
+      class: "container_overlay",
       style: {
         background: overlayColor,
         opacity: overlayOpacity
@@ -297,7 +297,7 @@ registerBlockType('customblock/my-custom-block', {
         backgroundRepeat: 'no-repeat'
       }
     }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      class: "container-overlay",
+      class: "container_overlay",
       style: {
         background: overlayColor,
         opacity: overlayOpacity
